@@ -1,0 +1,340 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+ }
+ /*----------------------Navbar-----------------*/
+ .header{
+     width: 100%;
+     background: rgb(132, 132, 172);
+     text-align: center;
+     padding: 12px 2px;
+ }
+  .header nav{
+     text-align: center;
+     width: 100%;
+     display: flex;
+     justify-items: center;
+     justify-content: space-around;
+  }
+  .left{
+     font-size: 25px;
+     font-weight: bold;
+  }
+  .right ol{
+     display: flex;
+     gap:25px;
+     font-size: 25px;
+     font-weight: bold;
+  }
+  .right ol li {
+     list-style: none;
+  }
+ .right ol li a{
+     text-decoration: none;
+     color: whitesmoke;
+ }
+ /*----------------------Main-----------------*/
+ .name-images{
+     width: 80%;
+     display: flex;
+     gap: 60px;
+     margin: 5px auto;
+     justify-content:space-between;
+ }
+ .intro{
+     width: 40%;
+     align-items: center;
+     text-align: center;
+     padding: 110px 0px;
+ }
+ #element{
+     font-size: 30px;
+     font-family: "Roboto", sans-serif;
+     color: blue;
+ }
+ .desc{
+      font-size: 25px;
+      white-space: nowrap;
+ }
+ .desc h2 .hi{
+     font-size: 50px;
+      padding-right: 3px;
+      color: blue;
+ }
+ .btn{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    margin:10px auto;
+ }
+ .btn1{
+    padding:8px 5px;
+    font-size: 15px;
+    background-color: rgb(108, 99, 99);
+    border-radius: 8px;
+ }
+ .btn1:hover{
+    cursor: pointer;
+    font-weight: bold;
+    background-color:black;
+    color:whitesmoke;
+ }
+ .images{
+     width: 40%;
+     text-align: center;
+     border-radius: 50px;
+     padding-top: 50px;
+     transition: transform 0.5s ease-in-out;
+     transition: filter 0.5 ease-in-out;
+     cursor: pointer;
+ }
+ .images img{
+     width:250px;
+     height: 300px;
+    border-radius: 100px;
+ }
+ #imge{
+     border: 5px double chartreuse;
+ }
+  .images:hover{
+     opacity: 1.7s;
+     transform: translateX(20px);
+     filter:grayscale(100%);
+ }
+ /*------------------Introduction Paragraph--------------*/
+ .para{
+     width: 80%;
+     margin: 0 auto;
+ }
+ .para h2{
+     margin:5px;
+ }
+ .para p{
+     font-size: 1.2rem;
+     line-height: normal;
+ }
+ /*---------------------Education-------------*/
+ .edu{
+     width: 80%;
+     background-color: beige;
+     margin: 10px auto;
+     justify-content: center;
+     border-radius: 30px;
+ }
+ table{
+     width:100%;
+     height: 100%;
+     text-align: center;
+     gap: 5px;
+ }
+ table td,th{
+    padding:12px;
+ }
+ #head{
+    margin-left: 135px;
+ }
+ /*----------------Skills---------------*/
+ .skill{
+     width: 80%;
+     margin: 10px auto;
+ }
+ .skill-list{
+     display: flex;
+     justify-content: space-around;
+     border-radius: 20px;
+ }
+  .language li{
+     padding:6px 0px;
+     font-size: 20px;
+  }
+  .framework li{
+     padding:6px 0px;
+     font-size: 20px;
+  }
+  .expertise li{
+     padding:6px 0px;
+     font-size: 20px;
+  }
+  .language,.framework,.expertise{
+     width:200px;
+     padding: 50px;
+     height: auto;
+     background-color: rgb(58, 51, 51);
+     border-radius: 50px;
+     align-items: center;
+     color: whitesmoke;
+     transition: transform 0.5s ease-in-out;
+ }
+ .language:hover{
+    transform: rotate(360deg);
+    background: repeating-linear-gradient();
+    background-color: black;
+    width: 250px;
+ }
+ .framework:hover{
+     transform: rotate(360deg);
+     background: repeating-linear-gradient();
+     background-color: black;
+     width: 250px;
+  }
+  .expertise:hover{
+     transform: rotate(360deg);
+     background: repeating-linear-gradient();
+     background-color: black;
+     width: 250px;
+  }
+ 
+ /*------------Project----------------*/
+ .project{
+     width: 80%;
+     margin: 10px auto;
+ }
+ .project-image{
+     background: pink;
+     display: flex;
+     justify-content: space-between;
+     border-radius: 20px;
+ }
+ /*-----------------Contact---------------*/
+
+ .contact{
+     width: 80%;
+     margin: 10px auto;
+ }
+.cont{
+    width:100%;
+    background-color: rgb(11, 9, 12);
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin:12px 0px;
+    padding: 12px 0px;
+    border-radius: 15px;
+    color:white;
+
+}
+ .contact-form{
+     display: flex;
+     justify-content: center;
+     border-radius: 20px;
+ }
+ form{
+      width:600px;
+     background-color: rgb(86, 134, 86);
+     padding: 50px;
+     font-size:25px;
+     border-radius: 20px;
+ }
+ #name{
+     width:100%;
+     padding:10px 0px;
+     font-size: 20px;
+     outline:none;
+ }
+ #email {
+     width:100%;
+     padding:10px 0px;
+     font-size: 20px;
+     outline:none;
+ }
+ #msg{
+     width:100%;
+     height:40%;
+     padding:20px 2px;
+     font-size: 20px;
+     outline:none;
+ }
+ #sbt{
+     padding: 15px;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px auto;
+    border-radius: 5px;
+ }
+  #sbt:hover{
+     cursor: pointer;
+     color: palevioletred;
+     background-color: rgb(36, 65, 36);
+  }
+ /*-------------footer------------------*/
+ .footer{
+     width:100%;
+     text-align: center;
+     background-color:rgb(132, 132, 172) ;
+     padding: 10px 0px;
+     font-size: 25px;
+ }
+ /*------------------Responsiveness---------------------*/
+ @media(max-width:720px){
+    .left{
+        font-size: none;
+    }
+    .right ol{
+        font-size: 15px;
+        gap:10px;
+    }
+     #head{
+         margin-left: 25px;
+     }
+    .skill-list{
+        flex-direction: column;
+        justify-items: center;
+    }
+    .language,.framework,.expertise{
+        width:300px;
+       height: 250px;
+        margin:10px auto;
+    }
+    .name-images{
+        flex-direction:column-reverse;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap:0px;
+    }
+    .images{
+      width: 100%;
+    }
+    .images img{
+        width: 300px;
+    }
+     .intro{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0px;
+}
+     .desc{
+     font-size: 20px;
+     white-space: nowrap;
+}
+.edu{
+width:100%;
+}
+    .footer{
+        font-size: 20px;
+    }
+}
+@media(max-width:450px){
+    .header nav{
+        padding:5px auto;
+    }
+    table th,td{
+        padding:2px;
+    }
+    .left{
+        display: none;
+    }
+    .edu{
+    width:100%;
+    }
+    table{
+        width:100%;
+    }
+}
+ 
+

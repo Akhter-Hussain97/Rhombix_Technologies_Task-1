@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <div class="left">Portfolio Website</div>
+            <div class="right"><ol>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#head">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ol>
+        </div>
+        </nav>
+    </div><br>
+    <div class="name-images">
+        <div class="intro">
+           <div class="desc">
+            <h2><span class="hi">Hi,</span>I am Akhter Hussain<br>and I am a passionate <br><span id="element"></span></h2>
+           </div>
+           <div class="btn">
+            <button id="btn2" class="btn1" onclick="CVdownload();">Download Resume</button>
+            <button id="btn3" class="btn1"  onclick="Github();">Visit Github</button>
+           </div>
+        </div>
+        <div class="images">
+            <img src="shirani.jpg" alt="Portfolio-images" id="imge">
+        </div>
+    </div>
+    <hr><br>
+      <div class="para">
+        <h2 id="introduction">Introduction</h2>
+        <p>This is my Portfolio website introduction. Welcome to my portfolio! I'm Akhter Hussain,
+             a passionate Web Developer and I have work as a Frontend Developer. With a keen eye for detail 
+             and a drive for creativity, I specialize in HTML,CSS,JavaScript,C++ and have a different framework
+             React.js and BootStrap,JQuery and TailwindCSS etc.Creating visually appealing and user-friendly
+              websites, or developing efficient software solutions. This portfolio showcases my best work, projects,
+               and skills that highlight my expertise and dedication to excellence. Feel free to explore, 
+            and lets connect to bring your ideas to life!.</p>
+      </div><br>
+      <div class="edu-backgrd">
+      <h2 id="head">Education</h2>
+      <div class="edu">
+          <table border="3" col="4">
+            <thead>
+                <tr><th>Degree</th>
+                <th>Institation</th>
+                <th>Year</th>
+                <th>CGPA</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Matric</td>
+                <td>Govt Boys High School Barah</td>
+                <td>2017-2019</td>
+                <td>72%</td></tr>
+                <tr><td>Intermediate</td>
+                    <td>Govt Inter College Khaplu</td>
+                    <td>2019-2021</td>
+                    <td>83%</td></tr>
+                    <tr><td>Bachealor of Software Engineering</td>
+                        <td>University of Sargodha</td>
+                        <td>2022-2026</td>
+                        <td>3.15</td></tr>
+            </tbody>
+            <tfoot>
+                <tr><td colspan="4">These are the my educational background.</td></tr>
+            </tfoot>
+          </table>
+      </div>
+      </div><br>
+      <div class="skill">
+         <h2 id="skills">Skills</h2>
+         <div class="skill-list">
+         <div class="language">
+            <h3>Language</h3>
+            <ul>      
+            <li>C++</li>
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+             </ul>
+         </div>
+         <div class="framework">
+            <h3>Framework</h3>
+            <ul>
+                <li>TailwindCSS</li>
+            <li>JQuery</li>
+            <li>BootStrap</li>
+            <li>ReactJs</li>
+             </ul>
+         </div>
+         <div class="expertise">
+            <h3>Experience</h3>
+            <ul><li>Fresher</li>
+             </ul>
+         </div>
+         </div>
+      </div><br>
+      <div class="project">
+        <h2 id="project">Project</h2>
+        <div class="skill-list">
+            <div class="language">
+               <h3>HTML/CSS</h3>
+               <ul>      
+               <li>Restaurants Website</li>
+               <li>Youtube Clone</li>
+                </ul>
+            </div>
+            <div class="framework">
+               <h3>C++</h3>
+               <ul>
+              <li>Bank Mangement System</li>
+               <li>Digital Clock</li>
+                </ul>
+            </div>
+            <div class="expertise">
+               <h3>React Js</h3>
+               <ul><li>MonkeyNews Website</li>
+                <li>Word and Text Converter</li>
+                </ul>
+            </div>
+      </div>
+      </div><br>
+      <div class="contact">
+          <h2 id="contact">Contact Me</h2>
+          <div class="cont"><h2 id="info">hi</h2></div>
+          <div class="contact-form">
+            <form action="">
+                <div class>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" placeholder="Enter your Name" id="name" required>
+                </div>
+                <div>
+                    <label for="name">Email:</label>
+                    <input type="text" name="name" placeholder="Enter your Email" id="email" required>
+                </div>
+                <div>
+                    <label for="name">Message:</label>
+                    <textarea name="message" id="msg" row="4" placeholder="Enter your Message"></textarea>
+                </div>
+                <div>
+                    <label for="submit">Submit:</label>
+                    <input type="submit" name="Submit" id="sbt" placeholder="Submit" value="Submit">
+                </div>
+            </form>
+          </div>
+      </div><br>
+      <div class="footer">
+        <footer>Copyright &copy; Portfolio Akhter_Hussain</footer>
+      </div>
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js">
+    </script>
+</body>
+  <script src="index.js"></script>
+<script>
+    var typed = new Typed('#element', {
+      strings: [ 'Web Developer'],
+      typeSpeed:50,
+    });
+  </script>
+</html>
